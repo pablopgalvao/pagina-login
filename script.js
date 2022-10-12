@@ -5,7 +5,7 @@ function logar(){
 
     if(login == "admin" && senha == "admin"){
         alert('Mensagem de Sucesso');
-        location.href = "home.html";
+        /* location.href = "home.html"; */
     }else{
         alert('Usuário ou senha incorretos');
     }
