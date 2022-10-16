@@ -1,13 +1,18 @@
-function logar(){
+function logar() {
+    const campos = document.querySelectorAll('.required');
 
-    var login = document.getElementById('login').value;
-    var senha = document.getElementById('senha').value;
-
-    if(login == "admin" && senha == "admin"){
-        alert('Mensagem de Sucesso');
-        /* location.href = "home.html"; */
-    }else{
-        alert('Usuário ou senha incorretos');
+    if (campos[0].value == "admin@admin.com" && campos[1].value == "admin" ){
+        alert("Você está logado!");
+        /* window.location.href = "page-logado.html" */
     }
-
+    if (campos[0].value == ""){
+        alert("Favor digitar o seu email!");
+    } 
+    if (campos[1].value == ""){
+        alert("Favor digitar uma senha !");
+    }
+    else {
+        alert("Login ou Senha Incorreto");
+        
+    }
 }
